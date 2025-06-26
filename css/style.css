@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --cta: #f53030;
+}
+
+.font-title {
+    font-family: 'Montserrat', 'Arial';
+}
+
+.font-body {
+    font-family: 'Open Sans', 'Arial';
+}
+
+.hero-section .logotipo {
+    width: 150px;
+    height: auto;
+}
+
+.hero-section .navbar {
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: 0.5em;
+}
+
+.hero-content {
+    background-image: url('../imgs/photo1.jpg');
+    background-size: cover;
+    background-position: top;
+    filter: brightness(0.8) contrast(1.2) saturate(1.1) hue-rotate(20deg);
+    height: 70vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to left, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
+
+.btn-cta {
+    /* background-color: var(--cta);
+    color: white; */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
