@@ -16,30 +16,30 @@
     font-family: 'Open Sans', 'Arial';
 }
 
-.hero-section .logotipo {
+.hero-section .logotipo  svg {
     width: 150px;
     height: auto;
 }
 
 .hero-section .navbar {
-    border-bottom: 1px solid var(--text-color);
     padding-bottom: 0.5em;
 }
 
 .hero-content {
-    background-image: url('../imgs/photo1.jpg');
+    background-image: url('../imgs/hero-bg.jpeg');
     background-size: cover;
-    background-position: top;
-    filter: brightness(0.8) contrast(1.2) saturate(1.1) hue-rotate(20deg);
-    height: 70vh;
+    background-position: bottom center;
+    height: 80vh;
 }
 
 .overlay {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(to left, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+    background: linear-gradient(to left, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
     mix-blend-mode: multiply;
     pointer-events: none;
+    height: 80vh;
+    z-index: 2;
 }
 
 .btn-cta {
@@ -51,3 +51,4 @@
     cursor: pointer;
     font-size: 16px;
 }
+
