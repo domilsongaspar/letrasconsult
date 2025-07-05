@@ -6,7 +6,7 @@
     <title>Letras Consult · Domine a arte comunicativa</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -20,7 +20,7 @@
             <div class="hero-content bg-fixed bg-center bg-cover">
                 <div class="overlay"></div>
                 <!-- Header -->
-                <header class="container px-3 py-2 mx-auto navbar flex align-center justify-between items-center flex-row md:flex-row">
+                <header class="container mx-auto px-3 py-3 navbar flex align-center justify-between items-center flex-row md:flex-row">
                     <figure class="logotipo z-3">
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="797.000000pt" height="313.000000pt" viewBox="0 0 797.000000 313.000000" preserveAspectRatio="xMidYMid meet">
                             <g transform="translate(0.000000,313.000000) scale(0.100000,-0.100000)" fill="#FFFFFF" stroke="none">
@@ -161,94 +161,194 @@
                             </g>
                             </svg>
                     </figure>
-                    <!--<button class="btn-cta bg-gradient-to-r from-red-500 via-red-600 to-red-700">
-                        <a href="htts://google.com/" class="text-white font-body">Reservar agora</a>
-                    </button>-->
+                    <!-- Countdown area -->
+                    <div class="relative z-3">          
+                        <div class="countdown">
+                            <div class="time-box">
+                                <span id="days">00</span>
+                                <small>dias</small>
+                            </div>
+                            <div class="time-box hidden sm:block">
+                                <span id="hours">00</span>
+                                <small>horas</small>
+                            </div>
+                            <div class="time-box hidden sm:block">
+                                <span id="minutes">00</span>
+                                <small>minutos</small>
+                            </div>
+                            <div class="time-box hidden sm:block">
+                                <span id="seconds">00</span>
+                                <small>segundos</small>
+                            </div>
+                        </div>
+                    </div>
                 </header>
                 <!-- Hero Content -->
                 <div class="text-white relative z-3 to-slide animate__animated">
-                    <div class="relative top-20 px-3">
-                        <h1 class="text-center font-title text-3xl font-bold">MASTER CLASS</h1>
-                        <div class="text-center">
-                            <span>com</span><br>
-                            <span class="font-title font-bold">Wilson Gaspar Maioca</span>
+                    <div class="container mx-auto relative top-6 portrait:top-20 md:top-20 px-3">
+                        <h1 class="text-center sm:text-left font-title text-3xl md:text-4xl font-bold" id="flip-0">MASTER CLASS</h1>
+                        <div class="text-center sm:text-left">
+                            <span class="orbitron mt-1 font-bold">
+                                <i class="fa-regular fa-circle-check"></i>
+                                Coffe break + Certificado
+                            </span>
                         </div>
-                        <p class="font-bold text-center mt-12">
-                            <!--Junte-se a nós para uma experiência transformadora em oratória e comunicação.-->
-                            Aprenda com os melhores e eleve suas habilidades de fala a um novo patamar.
+                        <p class="font-bold text-center sm:text-left mt-12" id="flip-3">
+                            Aprenda com os melhores e eleve as suas habilidades de fala a um novo patamar.
                         </p>
-                        <span class="mt-3 block font-bold text-center">17 vagas restante(s) 😬😬</span>
-                        <div class="mt-10 flex justify-center">
-                            <button type="button"
-                                class="w-80 px-6 py-3.5 text-base bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
-                                <span class="block font-bold">EU QUERO!</span>
-                            </button>
+                        <span class="mt-3 block font-bold text-center sm:text-left" id="flip-4">17 vagas restante(s)</span>
+                        <div class="mt-10 flex justify-center sm:justify-start" id="flip-5">
+                            <a href="./index.html#subscribe-form">
+                                <button type="button"
+                                    class="w-50 sm:w-70 px-6 py-3.5 sm:p-6 text-base bg-gradient-to-r 
+                                    from-red-500 via-red-600 to-red-700 hover:bg-gradient-to-br focus:ring-4 
+                                    focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg 
+                                    shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium 
+                                    rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 cursor-pointer">
+                                    <span class="block font-bold">EU QUERO!</span>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Main Content -->
-        <main class="px-5 container mx-auto relative top-5 main-content text-dark">
-            <div class="to-slide animate__animated">
-                <h2 class="text-center font-title font-bold text-lg">Apostando na Comunicação</h2>
-                <p class="text-justify font-body mt-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Veniam quibusdam magni culpa recusandae hic vitae incidunt corporis aut dolor cum veritatis, 
-                    soluta dicta minus consequatur quaerat cupiditate quos totam ducimus?
-                </p>
-            </div>
-            <!-- Sobre o orador -->
-            <div class="to-slide animate__animated">
-                <h2 class="text-center font-title font-bold text-lg my-5">Um pouco sobre o Orador</h2>
-                <span class="block my-1"></span>
-                <figure class="w-full h-full flex justify-center overflow-hidden">
-                    <img src="imgs/small.jpeg" alt="" class="w-[220px] h-[220px] object-cover object-center transition-all duration-300 rounded-full cursor-pointer filter grayscale hover:grayscale-0">
-                </figure>
-                <p class="text-justify font-body mt-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Veniam quibusdam magni culpa recusandae hic vitae incidunt corporis aut dolor cum veritatis, 
-                    soluta dicta minus consequatur quaerat cupiditate quos totam ducimus?
-                </p>
-            </div>
-            <!-- Localizacao -->
-            <div class="to-slide animate__animated">
-                <h2 class="text-center font-title font-bold text-lg my-5">A decorrer no Arquivo Nacional de Angola</h2>
-                <span class="block my-1"></span>
-                <figure class="w-full h-full flex justify-center overflow-hidden">
-                    <img src="imgs/ana.jpg" alt="" class="w-full h-[50vh] object-cover object-center rounded-lg">
-                </figure>
-                <p class="text-justify font-body mt-5">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Veniam quibusdam magni culpa recusandae hic vitae incidunt corporis aut dolor cum veritatis, 
-                    soluta dicta minus consequatur quaerat cupiditate quos totam ducimus?
-                </p>
-                <div class="relative h-[300px] mt-5 mx-auto">
-                    <iframe class="absolute" 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.106965748282!2d13.255120575962378!3d-8.962290592165097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a521f6da89f992b%3A0x3662c7a7ef3a9023!2sArquivo%20Nacional%20de%20Angola!5e0!3m2!1spt-PT!2sao!4v1750961719589!5m2!1spt-PT!2sao" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy"
-                        width="95%" 
-                        height="300"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+        <div class="relative top-5 w-full">
+            <!-- Main Content -->
+            <main class="container px-5 mx-auto main-content text-dark">
+                <div>
+                    <!-- Sobre o orador -->
+                    <div class="my-12 to-slide animate__animated">
+                        <div class="flex flex-col sm:flex-row items-center justify-center">
+                            <figure class="w-full h-full flex justify-center overflow-hidden">
+                                <img src="imgs/small.jpeg" alt="" class="w-[220px] h-[220px] md:w-[420px] md:h-[420px] object-cover object-center transition-all duration-300 rounded-full cursor-pointer filter grayscale hover:grayscale-0">
+                            </figure>
+                            <div class="basis-2/2 wm:basis-1/2">
+                                <h2 class="font-title text-center sm:text-left font-bold text-lg my-5">Wilson Bambi</h2>
+                                <p class="text-justify font-body mt-5">
+                                    Orador com uma sólida trajectória dedicada ao ensino da Língua Portuguesa e ao  desenvolvimento de Competências Comunicativas. 
+                                    Ao longo da sua carreira, tem ajudado centenas de estudantes e profissionais a dominarem a linguagem, 
+                                    a estruturarem ideias com clareza e a comunicarem com impacto. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- About theme -->
+                     <div class="to-slide animate__animated">
+                        <h2 class="text-center font-title font-bold text-lg">Apostando na Comunicação</h2>
+                        <p class="text-justify font-body mt-5">
+                            Junte-se a nós e receba inputs estratégicos para desenvolver ou aperfeiçoar as suas habilidades e competências comunicativas.
+                            Ao longo da sessão, será guiado por uma abordagem técnica focada no desenvolvimento da clareza discursiva, 
+                            expressividade, presença comunicativa e adequação ao contexto académico ou profissional.
+                        </p>
+                        <p class="text-justify italic font-body mt-5">
+                            E lembre-se... <span class="font-bold">“ a forma como fala pode abrir-lhe portas ou fechá-las . 
+                            Investa em si. Desenvolva a sua comunicação e destaque -se”</span>. 
+                        </p>
+                    </div>
+                    <!-- Localizacao -->
+                    <div class="to-slide animate__animated">
+                        <h2 class="text-center font-title font-bold text-lg my-10">A decorrer no Arquivo Nacional de Angola</h2>
+                        <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
+                            <figure class="w-full h-full flex justify-center overflow-hidden border-1 border-gray-200 rounded-lg">
+                                <img src="imgs/ana.jpg" alt="Arquivo Nacional de Apostando" class="w-full h-[40vh] sm:h-full object-cover object-center rounded-lg transition-all duration-300 rounded-lg blur-xs hover:blur-none">
+                            </figure>
+
+                            <figure class="w-full h-full flex justify-center overflow-hidden border-1 border-gray-200 rounded-lg">
+                                <img src="imgs/inside.webp" alt="Arquivo Nacional de Apostando" class="w-full h-[40vh] sm:h-full object-cover object-center rounded-lg transition-all duration-300 rounded-lg blur-xs hover:blur-none">
+                            </figure>
+                        </div>
+                        <div class="relative h-[325px] md:h-[800px] mt-5 mx-auto">
+                            <iframe class="absolute" 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.106965748282!2d13.255120575962378!3d-8.962290592165097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a521f6da89f992b%3A0x3662c7a7ef3a9023!2sArquivo%20Nacional%20de%20Angola!5e0!3m2!1spt-PT!2sao!4v1750961719589!5m2!1spt-PT!2sao" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy"
+                                width="100%" 
+                                height="97%"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>                
+            </main>
+            <!-- Inscrições -->
+            <div class="relative w-full">
+                <div class="action subscribe">
+                    <div class="container mx-auto">
+                        <h2 class="text-center text-dark">INSCREVA-SE</h2>
+                        <form action="" class="w-full max-w-lg mx-auto" id="subscribe-form">
+                            <label for="website-admin" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nome completo</label>
+                            <div class="flex">
+                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border rounded-e-0 border-gray-300 border-e-0 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
+                                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
+                                    </svg>
+                                </span>
+                                <input type="text" id="website-admin" class="outline-none rounded-none rounded-e-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="wilsonbambi">
+                            </div>
+                            <label for="input-group-1" class="block my-2 text-sm font-medium text-gray-900 dark:text-white">Seu e-mail</label>
+                            <div class="relative mb-6">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                                        <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+                                        <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+                                    </svg>
+                                </div>
+                                <input type="email" id="input-group-1" class="outline-none bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="nome@gmail.com">
+                            </div>
+                            <label for="input-group-1" class="block my-2 text-sm font-medium text-gray-900 dark:text-white">Telefone</label>
+                            <div class="relative mb-6">
+                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                    <i class="fa-solid fa-phone w-4 h-4 text-gray-500 dark:text-gray-400"></i>
+                                </div>
+                                <input type="tel" id="input-group-1" class="outline-none bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="+244 9xx xxx xxx">
+                            </div>
+                            <div class="mt-5">
+                                <button type="submit" class="animate__animated animate__pulse animate__slow animate__infinite">
+                                    Quero me inscrever
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="separator bg-slate-900">OU</div>
+                <!-- Share -->
+                <div class="action share">
+                    <div class="container mx-auto">
+                        <h2 class="text-center">Compartilhe</h2>
+                        <div class="text-white text-center py-3">
+                            <a href="https://facebook.com/" target="_blank" title="Partilhar no Facebook">
+                                <i class="fa-brands fa-facebook text-4xl sm:text-6xl mr-2"></i>
+                            </a>
+                            <a href="https://instagram.com/" title="Partilhar no Instagram">
+                                <i class="fa-brands fa-instagram text-4xl sm:text-6xl mx-2"></i>
+                            </a>
+                            <a href="htttps://api.whatsapp.com/send?phone=244927334512" target="_blank" title="Partilhar no Whatsapp">
+                                <i class="fa-brands fa-whatsapp text-4xl sm:text-6xl mx-2"></i>
+                            </a>
+                            <a href="https://me.telegram.com/">
+                                <i class="fa-brands fa-telegram text-4xl sm:text-6xl mx-2" title="Partilhar no Telegram"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>
 
-        <div id="btn_whats" class="bg-white px-4 py-3 rounded-full text-lime-600 fixed right-5 bottom-15 z-50 animate__animated">
-            <a href="https://api.whatsapp.com/send?phone=244929594071">
-                <i class="fa-brands fa-whatsapp text-5xl"></i>
-            </a>
-        </div>
-        <!-- Footer -->
-        <footer class="relative top-8 bg-gray-800 text-white py-4">
-            <div class="container mx-auto text-center">
-                <p>&copy; 2025 Letras Consul. Todos os direitos reservados.</p>
-                <p>Desenvolvido por Letras Consul</p>
+            <div id="btn_whats" class="bg-white border px-4 py-3 rounded-full text-lime-600 fixed right-5 bottom-15 z-50 animate__animated">
+                <a href="https://api.whatsapp.com/send?phone=244927334512" target="_blank" title="Partilhar no Whatsapp">
+                    <i class="fa-brands fa-whatsapp text-5xl"></i>
+                </a>
             </div>
-        </footer>
+            <!-- Footer -->
+            <footer class="relative bg-gray-800 text-white py-4">
+                <div class="container mx-auto text-center">
+                    <p>&copy; 2025 Letras Consult. Todos os direitos reservados.</p>
+                </div>
+            </footer>
+        </div>
     </div>
+
+    <script src="js/countdown.js"></script>
 </body>
 </html>
