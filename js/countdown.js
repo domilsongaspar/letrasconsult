@@ -1,4 +1,4 @@
-const countdownDate = new Date("2026-06-26T10:00:00").getTime();
+const countdownDate = new Date("2026-12-10T10:00:00").getTime();
 
 const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
